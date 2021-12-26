@@ -1,0 +1,185 @@
+.header >h1{
+    font-family: 'Russo One', sans-serif;
+}
+#editor{
+  background-color: #1d1f20;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  color: #fff;
+  border-radius: 0;
+  font-size: 0.9rem;
+}
+hr{
+  border-color: grey;
+  margin-bottom: 2.5rem;
+}
+.toolbar-container{
+  position: relative;
+  display:flex;
+  justify-content: space-between;
+  background-color: #4aa3a3;
+  padding: 4px 4px 3px 3px;
+  border: 1px solid #4aa3a3;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  font-family: Russo One;
+  font-size: 15px;
+}
+
+ .editorWrap textarea {
+  background-color: #c0d8d8;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  border-top: none;
+  border-right: none;
+  
+}
+.previewWrap{
+  background-color: #c0d8d8;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  border-top: none;
+  margin:auto ;
+  
+}
+.editorWrap {
+  width: 600px;
+  margin: 18px auto;
+}
+
+.editorWrap .toolbar-container{
+  width: 99%;
+
+}
+
+.editorWrap textarea {
+  width: 99%;
+  min-height: 200px;
+  margin-bottom: -5px;
+  resize: vertical;
+  outline: none;
+  padding-left: 5px;
+  padding-top: 5px;
+
+}
+
+.converter {
+  width: 100px;
+  text-align: center;
+  font-size: 35px;
+  margin: auto;
+}
+
+.right-div >h4{
+     margin: 0 auto;
+}
+
+.right-div{
+   width:50%;
+}
+
+.right-c{
+  position: relative;
+  right:0px;
+  width:50%;
+  text-align: right;
+  justify-content: flex-end;
+  font-size: 1.3em;
+  margin: 0 auto;
+  display: inline-block;
+  cursor: pointer;
+}
+.right-c:hover{
+  color:greenyellow;
+}
+.preview{
+  min-height: 50vh;
+  /*margin-top: 2rem;*/
+}
+textarea{
+  min-height:100vh;
+}
+.preview img{
+  max-width:250px;
+}
+
+.converter {
+  width: 100px;
+  text-align: center;
+  font-size: 35px;
+  margin: auto;
+}
+
+#preview table {
+  border-collapse: collapse;
+}
+#preview td,
+#preview th {
+  border: 2px solid #224b4b;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.hide {
+  display: none;
+}
+#preview code {
+  background: white;
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+#preview pre {
+  background: white;
+  padding: 5px 0 5px 5px;
+}
+#preview blockquote {
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+.maximized {
+  width: 96%;
+  min-height: 100vh;
+  margin: auto;
+}
+.maximized textarea {
+  min-height: 95vh;
+  resize: none;
+}
+
+.hide {
+  display: none;
+}
+
+
+@media screen and (max-width: 850px) {
+  .previewWrap {
+    width: 630px;
+  }
+
+  .editorWrap {
+    width: 550px;
+  
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .editorWrap {
+    width: 80vw;
+    margin: 0 auto;
+   
+  }
+
+  .maximized {
+    width: 95%;
+    margin: auto;
+  }
+
+  .previewWrap {
+    width: 95vw;
+  }
+  .previewWrap #preview {
+    width: 100%;
+  }
+
+
+}
